@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/cell_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    tools:context="layout.DashboardGroups">
+
+    <com.wang.avi.AVLoadingIndicatorView android:id="@+id/groups_avi"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_gravity="center_horizontal"
+        app:indicatorName="BallTrianglePathIndicator" />
+
+        <GridView
+            android:id="@+id/group_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:columnWidth="150dp"
+            android:minHeight="150dp"
+            android:numColumns="2"
+            android:verticalSpacing="64dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="spacingWidthUniform"
+            android:paddingBottom="0dip"
+            android:focusable="true"
+            android:fitsSystemWindows="true" />
+
+</FrameLayout>
